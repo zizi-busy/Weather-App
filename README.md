@@ -3,17 +3,24 @@
 ## Elements:
 - form: input field
 - bootstrap card
+- template string
 
 ----
 
 ## Javascript used: 
-- async () (to get city) 
-- Array.forEach()
-- toLowerCase()
-- includes()
-- remove()
-- trim()
+- async () (to get city and weather info) 
+- await ()
+
+
 
 - eventListeners 
-    - keyup 
-    - click
+    - submit
+    
+
+## Resources:
+
+Accuweather : 
+    - current conditions API 
+    - City Key 
+
+Climacons by Adam Whitcroft    
