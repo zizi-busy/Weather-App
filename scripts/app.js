@@ -24,7 +24,7 @@ const updateUI = (data) =>{
         <span>&deg;C</span>
     `;
 
-    //update icon & time images
+    //4. update icon & time images
     const iconSource =`img/icons/${weather.WeatherIcon}.svg`
     icon.setAttribute('src', iconSource)
 

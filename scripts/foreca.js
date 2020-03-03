@@ -1,7 +1,7 @@
 
-const key = '682500PcukwQUtq1UDd6XimUfAmBA5HL'
+const key = 's20F9JLAlVQK9MYn0d0NHOkw7lFlsvOf'
 
-//GET WEATHER API CALL -Current conditions API   
+//2.GET WEATHER API CALL -Current conditions API   
 const getWeather = async (locationID) => {
     const weatherUrl = 'http://dataservice.accuweather.com/currentconditions/v1/' // location ID comes at the end of this url
     const request = `${locationID}?apikey=${key}`
@@ -12,10 +12,10 @@ const getWeather = async (locationID) => {
    
 } 
 
-//GET CITY API CALL- to get a key code and pass it into the "getWeather()"
+//1. GET CITY API CALL- to get a key code and pass it into the "getWeather()"
 const getCity = async (city) => { 
     
-    const citiesUrl = 'http://dataservice.accuweather.com/locations/v1/cities/search'
+    const citiesUrl ='http://dataservice.accuweather.com/locations/v1/cities/search'
     const request = `?apikey=${key}&q=${city}` // "apikey" and "q" from accuweather 
 
     const response = await fetch (citiesUrl + request) ; // this returns the promise and we need to turn that into data using json
