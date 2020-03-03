@@ -9,6 +9,7 @@ const getWeather = async (locationID) => {
     const data = await response.json ()
 
    return data[0]//there are more cities with thes same name. Get the first one with [0]
+   
 } 
 
 //GET CITY API CALL- to get a key code and pass it into the "getWeather()"

@@ -5,6 +5,7 @@ const card = document.querySelector ('.card');
 const info = document.querySelector ('.information');
 const timeOfDay = document.querySelector ('img.time')
 const icon = document.querySelector ('.icon img ')
+const body = document.querySelector('body')
 
 //3._____________________
 const updateUI = (data) =>{
@@ -13,7 +14,7 @@ const updateUI = (data) =>{
     const weather = data.weather;*/
 
     const {cityInfo,weather} = data // get properties cityInfo and weather from data object
-
+    console.log(data)
     //update information template
     info.innerHTML = `
         <h5 class="my-3">${cityInfo.EnglishName}</h5>
@@ -30,9 +31,11 @@ const updateUI = (data) =>{
 
     let timeSrc = null;
     if (weather.IsDayTime){
-        timeSrc = 'img/day.svg'
+        timeSrc = 'img/day.png';
+        
     }else{
-        timeSrc = 'img/night.svg'
+        timeSrc = 'img/night.png';
+      
     }
     timeOfDay.setAttribute('src', timeSrc )
 }
