@@ -7,7 +7,7 @@
 ----
 
 ## Javascript used: 
-- Template string to generate list items
+- async () (to get city) 
 - Array.forEach()
 - toLowerCase()
 - includes()
